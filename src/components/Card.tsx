@@ -1,5 +1,7 @@
 
-export default function Card({ date, open, high, low, close }) {
+import { Stock } from "../types";
+
+export default function Card({ date, open, high, low, close }: Stock) {
     const profit = close - open;
 
     return (

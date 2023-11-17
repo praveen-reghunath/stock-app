@@ -7,8 +7,6 @@ import Button from './components/Button';
 import StockListViewer from './components/StockListViewer';
 function App() {
 
-  const onSorClick = () => { };
-
   return (
     <>
       <StockProvider>
