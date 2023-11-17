@@ -1,5 +1,7 @@
 import { useStocks } from "../StockProvider";
 
+import "./Button.scss";
+
 export default function Button() {
     const { sortStockList } = useStocks();
 
@@ -8,6 +10,6 @@ export default function Button() {
     }
 
     return (
-        <button onClick={onBtnClick}>Sort</button>
+        <button className="button" onClick={onBtnClick}>Sort</button>
     )
 }

@@ -1,6 +1,7 @@
 import { useStocks } from "../StockProvider";
+import "./MonthSelector.scss";
 
-export default function monthSelector() {
+export default function monthSelector({ className }) {
     const { setMonth } = useStocks();
 
     const onSelectChange = (e) => {
@@ -9,7 +10,7 @@ export default function monthSelector() {
     }
 
     return (
-        <select onChange={onSelectChange}>
+        <select className={`month-selector ${className}`} onChange={onSelectChange}>
             <option value="0">January</option>
             <option value="1">February</option>
             <option value="2">March</option>

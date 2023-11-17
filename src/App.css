@@ -18,13 +18,8 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.month{
+  margin-right: 0.5rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -33,8 +28,19 @@
   }
 }
 
+.controls{
+  margin-bottom: 1rem;
+}
+
 .card {
-  padding: 2em;
+  padding: 0.5rem;
+  border: solid lightgray;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 5px 1px rgb(179, 177, 177);
+}
+
+footer {
+  margin-top: 1rem;
 }
 
 .read-the-docs {

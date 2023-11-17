@@ -10,13 +10,14 @@ export function useStocks() {
 export function StockProvider({ children }) {
     const [month, setMonth] = useState(0);
 
-    const totalProfit = 0;
-    const totalLoss = 0;
-
     const stocks = allStocks.filter(x => {
         const date = new Date(x.date);
         return date.getMonth() === month;
     });
+
+    const profits = stocks.map(x => x.close - x.open);
+    const totalProfit = profits.filter(x => x > 0).reduce((acc, val) => acc + val, 0);
+    const totalLoss = profits.filter(x => x < 0).reduce((acc, val) => acc + val, 0);
 
     function sortStockList() {
 

@@ -5,8 +5,8 @@ export default function Summary() {
 
     return (
         <>
-            <div>Total Profits: {totalProfit}</div>
-            <div>Total Loss: {totalLoss}</div>
+            <div>Total Profits: {totalProfit.toFixed(2)}</div>
+            <div>Total Loss: {totalLoss.toFixed(2)}</div>
         </>
     )
 }

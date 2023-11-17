@@ -17,7 +17,7 @@ function App() {
         </header>
         <div className=''>
           <div className='controls'>
-            <MonthSelector></MonthSelector>
+            <MonthSelector className="month"></MonthSelector>
             <Button></Button>
           </div>
           <StockListViewer></StockListViewer>
